@@ -1,0 +1,279 @@
+/* Styles généraux */
+.admin-dashboard {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* En-tête */
+.dashboard-header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  color: #2d3748;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-subtitle {
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+/* Cartes de statistiques */
+.stats-card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.stats-label {
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.stats-change {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Graphiques */
+.chart-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.chart-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+/* Onglets */
+.tabs-container {
+  background-color: #4c51bf;
+}
+
+.tab-item {
+  color: white !important;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.tab-item.Mui-selected {
+  opacity: 1;
+}
+
+.tab-icon {
+  margin-right: 8px;
+}
+
+/* Tableaux */
+.data-grid-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.MuiDataGrid-root {
+  border: none !important;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #4c51bf;
+  color: white;
+  border-radius: 0 !important;
+}
+
+.MuiDataGrid-cell {
+  border-bottom: 1px solid #edf2f7 !important;
+}
+
+/* Boutons et actions */
+.action-button {
+  margin: 0 4px;
+  transition: transform 0.2s;
+}
+
+.action-button:hover {
+  transform: scale(1.1);
+}
+
+.reply-field {
+  margin-top: 8px;
+}
+
+/* Dialogues */
+.dialog-title {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.dialog-content {
+  padding-top: 16px !important;
+}
+
+.dialog-actions {
+  padding: 16px 24px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats-card {
+    margin-bottom: 1rem;
+  }
+
+  .chart-container {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Badges et indicateurs */
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.status-active {
+  background-color: #48bb78;
+  color: white;
+}
+
+.status-blocked {
+  background-color: #f56565;
+  color: white;
+}
+
+.status-read {
+  background-color: #48bb78;
+  color: white;
+}
+
+.status-unread {
+  background-color: #ed8936;
+  color: white;
+}
+
+/* Tooltips personnalisés */
+.custom-tooltip {
+  font-size: 0.875rem !important;
+  background-color: #2d3748 !important;
+}
+
+/* Effets de survol */
+.hover-scale {
+  transition: transform 0.2s;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Barre de recherche */
+.search-field {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.search-field .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+/* Filtres */
+.filter-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Chargement */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.loading-spinner {
+  color: #4c51bf !important;
+}
+
+/* Impression */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .MuiBox-root {
+    padding: 20px !important;
+  }
+
+  .MuiCard-root,
+  .MuiPaper-root {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .MuiDataGrid-root {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .MuiDataGrid-columnHeaders {
+    background-color: #ccc !important;
+    color: #000 !important;
+  }
+
+  .MuiDataGrid-cell {
+    color: #000 !important;
+  }
+}
+
