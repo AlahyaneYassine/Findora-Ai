@@ -1,0 +1,22 @@
+# Dépendances (client/ et server/ ont déjà chacun leur propre .gitignore ;
+# celui-ci couvre un éventuel node_modules à la racine)
+/node_modules
+
+# Fichier de dump/structure auto-généré (peut peser plusieurs Mo)
+structure.txt
+
+# Variables d'environnement
+.env
+.env.*
+!.env.example
+
+# Système / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
