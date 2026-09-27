@@ -80,4 +80,6 @@ npm start               # démarre l'app sur http://localhost:3000
 
 ## Auteur
 
-**Yassine Alahyane** — Étudiant ingénieur en 4ᵉ année, Cybersécurité et Infrastructures Réseaux (EMSI Casablanca)
+**Yassine Alahyane** 
+
+Cybersecurity Engineer Student
