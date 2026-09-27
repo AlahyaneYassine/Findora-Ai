@@ -82,4 +82,4 @@ npm start               # démarre l'app sur http://localhost:3000
 
 **Yassine Alahyane** 
 
-Cybersecurity Engineer Student
+Cybersecurity Engineering Student
